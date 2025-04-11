@@ -11,7 +11,7 @@ import bookRoute from "./routes/bookRoutes.js"
 const app = express()
 const PORT = process.env.PORT
 
-job.start()
+job.start()   // comment this line out to disable the cron job running to keep the render server active.
 app.use(express.json())
 app.use(cors())
 
